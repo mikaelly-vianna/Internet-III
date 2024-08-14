@@ -1,0 +1,74 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: "Comic Sans MS", "Comic Sans", cursive; 
+    background-color: #FFDEAD;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 80px); 
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.card {
+    width: 80px; 
+    height: 80px; 
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px; 
+    cursor: pointer;
+    user-select: none;
+    border: 2px solid black;
+}
+
+.card.flipped {
+    background-color: transparent;
+    cursor: default;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 24px;
+    display: none;
+}
+
+.welcome-screen {
+	color: 	#FFDEAD;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:#8B4513;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.welcome-screen h1, .welcome-screen button {
+    font-family: "Comic Sans MS", "Comic Sans", cursive; 
+}
+
+.welcome-screen button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #8B4513;
+
+}
